@@ -23,9 +23,7 @@
 	<script src="/storybooks-sierraleone/js/sbc.min.js"></script>
 </head>
 
-
   <body>
-
 
     <div class="container">
 
@@ -49,9 +47,9 @@
 	</section>
 </header>
 
-        <div class="float-"><span class="tooltip tooltip-" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span></div>
+        <div class="float-right"><span class="tooltip tooltip-left" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span></div>
 
-<div class="float-">
+<div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
 		<option selected="" disabled="">Change language</option>
 		<option value="/storybooks-sierraleone/stories/kri/0072">Krio</option>
@@ -61,6 +59,36 @@
 		<option value="/storybooks-sierraleone/stories/tem/0072">Temne</option>
 	</select>
 </div>
+
+        <a class="btn btn-lg" href="/storybooks-sierraleone/stories/fr">Back to stories list</a><br><br>
+
+<div class="columns" id="text01">
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/01.jpg"></div>
+	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
+		<h1><span class="def">La revanche de l’indicateur</span>
+			<span class="l1"></span>
+			<span class="l2">The Honeyguide's revenge</span>
+		</h1>
+		<div class="btn-group cover-buttons">
+			<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
+			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
+			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/fr/0072/mp3/01.mp3"></audio>
+			<button onclick="switchlang('fr,kri','kri,en,fr')" class="btn btn-lg lang-primary" title="Switch between French and Krio">kri</button>
+			<button onclick="switchlang('fr,en','kri,en,fr')" class="btn btn-lg lang-secondary" title="Switch between French and English">en</button>
+		</div>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon cover-icon-text" src="/storybooks-sierraleone/css/pencil.svg" alt="Written by"></span> Zulu folktale</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon cover-icon-text" src="/storybooks-sierraleone/css/art.svg" alt="Illustrated by"></span> Wiehan de Jager</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon cover-icon-text" src="/storybooks-sierraleone/css/global.svg" alt="Translated by"></span> Alexandra Danahy</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon cover-icon-text" src="/storybooks-sierraleone/css/megaphone.svg" alt="Read by"></span> Monique Bournot-Trites</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon cover-icon-text" src="/storybooks-sierraleone/css/language.svg" alt="Language"></span> <a href="/storybooks-sierraleone/stories/fr">French</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon cover-icon-text" src="/storybooks-sierraleone/css/level.svg" alt="Level"></span> <a href="/storybooks-sierraleone/stories/fr/level4">Level 4</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon cover-icon-audio" src="/storybooks-sierraleone/css/speaker.svg" alt="Narrate full story"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/fr/0072/fr-0072_honeyguide.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Reading speed"><img class="cover-icon cover-icon-text" src="/storybooks-sierraleone/css/speedometer.svg" alt="Reading speed" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="Reading speed: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="Autoplay story (beta - desktop only)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/storybooks-sierraleone/css/play.svg" alt="Autoplay story" style="cursor:pointer" onclick="autoplay()"></span></h3>
+	</div>
+</div>
+
+<hr>
 
         <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0072/02.jpg"></div>
@@ -408,6 +436,32 @@ And Gingile learned his lesson.
 </div>
 <hr>
 
+
+        <div id="colophon" class="columns">
+	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
+		<h5><span class="colophon-heading">Written by:</span> Zulu folktale</h5>
+		<h5><span class="colophon-heading">Illustrated by:</span> Wiehan de Jager</h5>
+		<h5><span class="colophon-heading">Translated by:</span> Alexandra Danahy</h5>
+		<h5><span class="colophon-heading">Read by:</span> Monique Bournot-Trites</h5>
+		<h5><span class="colophon-heading">Language:</span> <a href="/storybooks-sierraleone/stories/fr">French</a></h5>
+		<h5><span class="colophon-heading">Level:</span> <a href="/storybooks-sierraleone/stories/fr/level4">Level 4</a></h5>
+		<h5><span class="colophon-heading">Source:</span> <a href="https://africanstorybook.org/reader.php?id=2099" target="_blank">The Honeyguide's revenge</a> from <a href="https://africanstorybook.org/">African Storybook</a></h5>
+
+		<div><a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 International License</a>.</div>
+
+	</div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">
+		<h5>Read more <a href="/storybooks-sierraleone/stories/fr/level4">level 4</a> stories:</h5>
+			<label class="chip"><a href="/storybooks-sierraleone/stories/fr/0243/">Les vacances avec grand-maman</a></label>
+			<label class="chip"><a href="/storybooks-sierraleone/stories/fr/0291/">Que va dire la sœur de Vusi&nbsp;?</a></label>
+			<label class="chip"><a href="/storybooks-sierraleone/stories/fr/0294/">Les bananes de grand-mère</a></label>
+	</div>
+</div>
+<div>
+<h5>Options</h5>
+	<a class="btn btn-lg" href="/storybooks-sierraleone/stories/fr" class="button">Back to stories list</a> <span class="tooltip tooltip-top" data-tooltip="PDF download for this story is currently not available."><a class="btn btn-lg disabled">Download PDF</a></span>
+<br><br>
+</div>
 
 
     </div>
